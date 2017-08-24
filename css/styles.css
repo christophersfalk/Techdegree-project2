@@ -1,2 +1,79 @@
-/* CSS Styles */ 
+/* ================================= 
+  Base Styles
+==================================== */
+* {
+ box-sizing: border-box; 
+}
 
+body {
+	line-height: 1.6;
+	width: 100%;
+}
+
+h1 {
+ margin-top: 0; 
+}
+a { 
+	text-decoration: none;
+	color: black;
+}
+
+/* ================================= 
+  Base Layout Styles
+==================================== */
+.wrapper {
+	text-align: center;
+
+}
+.main-header {
+	background: #FAFAFA;
+	padding: 1em 0;
+}
+
+
+/* ---- Navigation ---- */
+.name {
+}
+
+.name,
+.main-nav li {
+	font-family: 'Roboto Slab', serif;
+}
+
+.main-nav li {
+	background-color: white;
+	margin: .5em 1em;
+	padding: .5em;
+}
+
+
+/*---- Introduction ----- */
+
+.intro img {
+	max-width: 60%;
+	margin-top: 2em;
+}
+.intro p {
+	color: grey;
+	padding: 1em;
+}
+
+
+/* ---- Layout Containers ---- */
+
+/* ---- Psuedo classes  ---- */
+
+
+
+
+/* ================================= 
+  Media Queries
+==================================== */
+
+@media (min-width: 769px) {
+  .wrapper {
+ width: 70%;
+ max-width: 1000px;
+ margin: 0 auto;
+}
+}
