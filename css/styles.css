@@ -59,7 +59,20 @@ a {
 }
 
 
-/* ---- Layout Containers ---- */
+/* ---- Maint Content ---- */
+
+.portfolio{
+	padding: 1em;
+}
+
+.marketing img,
+.search-page img,
+.travel-app img,
+.map img,
+.photo img,
+.calculator img {
+	width: 90%;
+}
 
 /* ---- Psuedo classes  ---- */
 
@@ -71,9 +84,93 @@ a {
 ==================================== */
 
 @media (min-width: 769px) {
-  .wrapper {
- width: 70%;
- max-width: 1000px;
- margin: 0 auto;
+	  .wrapper {
+	 width: 100%;
+	 max-width: 1024px;
+	 margin: 0 auto;
+	}
+
+	/* Nav Bar and Intro */
+
+	.main-nav li {
+		display: inline-block;
+		background-color: #FAFAFA;
+	}
+
+	.intro img {
+		float: right;
+		padding-left: .5em;
+		padding-right: 1.5em;
+	}
+
+	.intro p {
+		margin-top: 1em;
+		font-size: 1.5em;
+	}
+
+	.clearfix::after {
+  		content: "";
+  		display: table;
+  		clear: both;
+	}
+
+	.col {
+		display: inline-block;
+		width: 50%;
+		vertical-align: top;
+		margin-right: -1em;
+		padding-left: 1em;
+		padding-right: 1em;
+	}
+
+
+
+
 }
+
+@media (min-width: 1024px) {
+	.wrapper {
+		width: 100%;
+		max-width: 100%;
+		margin: 0 auto;
+	}
+
+	/* Nav Bar and Intro */
+
+	.name {
+		float: left;
+		padding-left: 1em;
+	}
+
+	.main-nav {
+		float: right;
+	}
+
+	.main-nav li {
+		float: left;
+		padding-right: 1em;
+	}
+
+	.intro {
+		display: inline-block;
+	}
+
+	.col {
+		display: inline-block;
+		width: 30%;
+		vertical-align: top;
+		margin-right: -1em;
+		padding-left: 1em;
+		padding-right: 1em;
+		padding-bottom: 1em;
+	}
+
+
+	.clearfix::after {
+  		content: "";
+  		display: table;
+  		clear: both;
+}
+
+
 }
