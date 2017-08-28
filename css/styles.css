@@ -25,15 +25,15 @@ a {
 	text-align: center;
 
 }
-.main-header {
+.main-header,
+.contact,
+.footer {
 	background: #FAFAFA;
 	padding: 1em 0;
 }
 
 
 /* ---- Navigation ---- */
-.name {
-}
 
 .name,
 .main-nav li {
@@ -74,8 +74,33 @@ a {
 	width: 90%;
 }
 
+.contact {
+	padding-top: 2.5em;
+	padding-right: 1em;
+	border-bottom: 1px solid grey;
+}
+
+/* ---- footer ---- */
+
+.footer {
+	padding: 1.5em;
+}
+.back {
+	float:right;
+}
+
+.footer-name {
+	float: left;
+}
+
 /* ---- Psuedo classes  ---- */
 
+
+.clearfix::after {
+  		content: "";
+  		display: table;
+  		clear: both;
+}
 
 
 
